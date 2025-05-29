@@ -9,12 +9,12 @@
     font-weight: 400;
 }
 .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2009;
-        background-color: white;
-        width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2009;
+    background-color: white;
+    width: 100%;
 }
 .header__wrapper {
     display: flex;
@@ -38,6 +38,7 @@
     font-family: 'Montserrat';
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 .icon-ulytau {
     width: 100px;
@@ -76,10 +77,99 @@
     background-color: #3B77E1;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid #3B77E1;
+}
+.button-test:hover {
+    transition: 0.4s;
+    color: #3B77E1;
+    background-color: white;
+    border: 1px solid #3B77E1;
 }
 .main-video {
     max-width: 1000px;
     height: 550px;
     border-radius: 25px;
 }
-
+.survey-help__content {
+    padding: 80px 10vw 60px 10vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.survey-help__title {
+    font-size: 64px;
+    font-family: 'Montserrat';
+}
+.survey-help__blocks {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.survey-help-image__wrapper {
+    display: flex;
+    gap: 30px;
+}
+.survey-help__number {
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.survey-help-image__wrapper {
+    width: 320px;
+    height: 320px;
+}
+.survey-help-image {
+    width: 300px;
+    height: 300px;
+}
+.survey-help__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.survevy-help__description {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.examples-professions {
+    padding: 60px 0 60px 0
+}
+.examples-professions__title {
+    font-size: 64px;
+    font-family: 'Montserrat';
+}
+.examples-professions__content {
+    padding: 0 10vw;
+    margin: 0 auto;
+}
+.examples-professions__blocks {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.examples-professions__block {
+    width: 356px;
+    height: 520px;
+    background-color: #ECE3E3;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.examples-professions__heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.examples-professions__skills,
+.examples-professions__interests {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Montserrat';
+}
