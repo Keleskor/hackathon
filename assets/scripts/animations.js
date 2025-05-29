@@ -1,6 +1,5 @@
 const surveyHelp = document.getElementsByClassName("survey-help")[0];
 
-
 window.addEventListener("scroll", () => {
 
     let height =  surveyHelp.getBoundingClientRect().top;
