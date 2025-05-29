@@ -37,7 +37,14 @@
                 </a>
             </li>
         </ul>
-        <img src="assets/icons/8260ab9e7486bfd97eb6d7baa3e4e7df28b75098.png" alt="" class="year-icon">
+        <div class="authorization">
+            <h5 class="registr">
+                Рестрация
+            </h5>
+            <h5 class="auth">
+                Вход
+            </h5>
+        </div>
         </div>
     </header>
     <section class="initial-section">
@@ -180,5 +187,68 @@
             </div>
         </div>
     </section>
+    <div class="modal-reg">
+        <div class="modal-reg__content">
+            <h4 class="modal-reg__title">
+                Регистрация
+            </h4>
+            <h4 class="modal-reg__close">
+                🗙
+            </h4>
+            <form action="" class="modal-reg__form" method="post">
+                <div class="form-row">
+                    <label for="input__name-reg" class="name-reg">
+                        Имя:
+                    </label>
+                    <input type="text" class="input__name-reg" name="input__name-reg" id="input__name-reg">
+                </div>
+                <div class="form-row">
+                    <label for="input__surname-reg" class="surname-reg">
+                        Регистрация:
+                    </label>
+                    <input type="text" class="input__surname-reg" name="input__surname-reg" id="input__surname-reg">
+                </div>
+                <div class="form-row">
+                    <label for="input__email-reg" class="email-reg">
+                        e-mail
+                    </label>
+                    <input type="text" id="input__email-reg" name="input__email-reg" class="input__email-reg">
+                </div>
+                <div class="form-row">
+                    <label for="input__password-reg" class="password-reg">
+                        Пароль
+                    </label>
+                    <input type="text" name="input__password-reg" id="input__password-reg" class="input__password-reg">
+                </div>
+                <input type="submit" class="submit-reg" value="Отправить">
+            </form>
+        </div>  
+    </div>
+    <div class="modal-auth">
+        <div class="modal-auth__content">
+            <h4 class="modal-reg__title">
+                Авторизация
+            </h4>
+            <h4 class="modal-auth__close">
+                🗙
+            </h4>
+            <form action="" class="modal-reg__form" method="post">
+                <div class="form-row">
+                    <label for="input__email-reg" class="email-reg">
+                        e-mail
+                    </label>
+                    <input type="text" id="input__email-reg" name="input__email-reg" class="input__email-reg">
+                </div>
+                <div class="form-row">
+                    <label for="input__password-reg" class="password-reg">
+                        Пароль
+                    </label>
+                    <input type="text" name="input__password-reg" id="input__password-reg" class="input__password-reg">
+                </div>
+                <input type="submit" class="submit-reg" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

@@ -173,3 +173,122 @@
     font-size: 26px;
     font-family: 'Montserrat';
 }
+.authorization {
+    display: flex;
+    gap: 20px;
+}
+.registr,
+.auth {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: #4B74DC;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.modal-reg,
+.modal-auth {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.modal-reg-on {
+    display: flex;
+}
+.modal-auth-on {
+    display: flex;
+}
+.modal-reg__content,
+.modal-auth__content {
+    position: relative;
+    background-color: #3B77E1;
+    width: 764px;
+    height: 787px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal-reg__close,
+.modal-auth__close {
+    position: absolute;
+    font-size: 36px;
+    color: white;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+.modal-reg__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-reg__title {
+    padding-bottom: 40px;
+    font-size: 48px;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: center;
+}
+.overflow{
+    overflow: hidden;
+}
+.input__name-reg,
+.input__surname-reg,
+.input__email-reg,
+.input__password-reg {
+    width: 500px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+.submit-reg {
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    color: #605747;
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+.name-reg,
+.surname-reg,
+.email-reg,
+.password-reg {
+    display: block;
+    font-size: 32px;
+    color: white;
+    font-family: 'Montserrat';
+    text-align: left;
+    padding: 10px 10px;
+}
+  
+  .modal-reg__content {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    min-width: 300px;
+  }
