@@ -55,6 +55,7 @@
 .initial-section__title {
     font-size: 80px;
     font-family: 'Montserrat';
+    white-space: nowrap;
 }
 .initial-section__content {
     display: flex;
@@ -314,8 +315,6 @@ input:focus{
     font-family: 'Montserrat';
 }
 .footer__description {
-    width: 450px;
-    height: 210px;
     padding-top: 30px;
     font-size: 20px;
     font-family: 'Montserrat';

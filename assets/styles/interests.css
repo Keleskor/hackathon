@@ -1,0 +1,30 @@
+.interests__content {
+    width: 100%;
+   padding: 120px 10vw;
+   margin: 0 auto;
+}
+.diagram {
+    max-width: 650px;
+}
+.interests-first {
+    display: flex;
+}
+.interests__title {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+.interests-first__heading,
+.interests-second__heading,
+.interests-last__heading   {
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+.interests-first__description,
+.interests-second__description,
+.interests-last__description {
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
