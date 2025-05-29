@@ -1,17 +1,11 @@
 const surveyHelp = document.getElementsByClassName("survey-help")[0];
-const modal = document.querySelector(".registr");
-
-
-function animatiModal(element) {
-    element.classList.add("down-top");
-}
 
 
 window.addEventListener("scroll", () => {
 
-    let urveyHelpHeight =  surveyHelp.getBoundingClientRect().top;
+    let height =  surveyHelp.getBoundingClientRect().top;
 
-    if (window.innerHeight >= urveyHelpHeight) {
+    if (window.innerHeight >= height) {
         
         surveyHelp.classList.add("anim-appearances");
 
@@ -25,4 +19,3 @@ window.addEventListener("scroll", () => {
 
     }
 });
-

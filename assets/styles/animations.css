@@ -22,11 +22,8 @@
 }
 
 .anim-appearances {
+    position: relative;
     animation: appearances 2s ease-in-out 4ms 1;
-}
-
-.modal-auth-on .modal-auth__content, .modal-reg-on .modal-reg__content {
-    animation: down-top 2s ease-in-out 1ms 1;
 }
 
 .anim-appearances div:nth-child(2) {
@@ -58,12 +55,3 @@
     animation: down-top 2s ease-in-out 1ms 1;
 }
 
-.examples-professions__blocks div {
-    transition: padding 2s, box-shadow 2s;
-}
-
-.examples-professions__blocks div:hover {
-    padding: 0px 0px 20px 30px;
-    box-shadow:  12px 12px 2px 1px #aca6a6;
-}
-   
