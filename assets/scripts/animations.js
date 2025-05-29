@@ -1,11 +1,10 @@
 const surveyHelp = document.getElementsByClassName("survey-help")[0];
 
-
 window.addEventListener("scroll", () => {
 
-    let height =  surveyHelp.getBoundingClientRect().top;
+    let urveyHelpHeight =  surveyHelp.getBoundingClientRect().top;
 
-    if (window.innerHeight >= height) {
+    if (window.innerHeight >= urveyHelpHeight) {
         
         surveyHelp.classList.add("anim-appearances");
 
@@ -16,6 +15,6 @@ window.addEventListener("scroll", () => {
         surveyHelp.addEventListener("animationend", () => {
             surveyHelp.style.right = 0 + "px";
         });
-
+        
     }
 });
