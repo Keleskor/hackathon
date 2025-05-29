@@ -22,26 +22,24 @@
 }
 
 .anim-appearances {
-    position: relative;
     animation: appearances 2s ease-in-out 4ms 1;
-   
 }
 
-.anim-appearances-reverse {
-    animation: appearances 2s reverse 4ms 1;
+.modal-auth-on .modal-auth__content, .modal-reg-on .modal-reg__content {
+    animation: down-top 2s ease-in-out 1ms 1;
 }
 
-.anim-appearances div:nth-child(2), .anim-appearances-reverse:nth-child(2) {
+.anim-appearances div:nth-child(2) {
     animation-duration: 2.7s;
      animation-delay: 6ms;
 }
 
-.anim-appearances div:nth-child(3), .anim-appearances-reverse:nth-child(3) {
+.anim-appearances div:nth-child(3) {
       animation-duration: 2.7s;
        animation-delay: 8ms;
 }
 
-.anim-appearances div:nth-child(4), .anim-appearances-reverse:nth-child(4) {
+.anim-appearances div:nth-child(4) {
     animation-duration: 3.7s;
     animation-delay: 9ms;
 }

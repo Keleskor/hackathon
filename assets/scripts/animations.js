@@ -1,4 +1,11 @@
 const surveyHelp = document.getElementsByClassName("survey-help")[0];
+const modal = document.querySelector(".registr");
+
+
+function animatiModal(element) {
+    element.classList.add("down-top");
+}
+
 
 window.addEventListener("scroll", () => {
 
@@ -15,6 +22,7 @@ window.addEventListener("scroll", () => {
         surveyHelp.addEventListener("animationend", () => {
             surveyHelp.style.right = 0 + "px";
         });
-        
+
     }
 });
+
