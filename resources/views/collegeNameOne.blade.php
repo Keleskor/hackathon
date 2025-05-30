@@ -1,56 +1,51 @@
-<!DOCTYPE html>
-<html lang="ru">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЖВПК - Жезказганский политехнический колледж</title>
-    <link rel="stylesheet" href={{ asset('assets/styles/main.css') }}>
 
-    <link rel="stylesheet" href={{ asset('assets/styles/collegeOne.css') }}>
-</head>
-
-<body>
-    <header class="header">
-        <div class="header__wrapper">
-            <img src="assets/icons/8e98f0dd5a3a1bcda97f2d0088d72c7560f60010.png" alt="" class="icon-ulytau">
-            <ul class="header-list">
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Главная
-                    </a>
-                </li>
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Список <span class="colleges"> колледжей</span>
-                    </a>
-                </li>
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Опрос
-                    </a>
-                </li>
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Контакты
-                    </a>
-                </li>
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Интересы студентов
-                    </a>
-                </li>
-            </ul>
-            <div class="authorization">
-                <h5 class="registr">
-                    Рестрация
-                </h5>
-                <h5 class="auth">
-                    Вход
-                </h5>
-            </div>
-        </div>
-    </header>
+@section('content')
+<style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        .college-card {
+            max-width: 1300px;
+            margin: 100px auto 0 auto;
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .college-logo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .college-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .college-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .college-info {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .college-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .college-link a:hover {
+            text-decoration: underline;
+        }
+</style>
+    <body>
     <div class="college-card">
         <img src={{ asset("logo/$college->logo") }} alt="Логотип колледжа" class="college-logo">
 
@@ -65,7 +60,5 @@
         <p class="college-info college-link"><strong>Сайт:</strong> <a href={{ $college->site }}
                 target="_blank">{{ $college->site }}</a></p>
     </div>
+@endsection
 
-</body>
-
-</html>
