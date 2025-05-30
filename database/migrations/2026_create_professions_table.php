@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('professions', function (Blueprint $table) {
+            $table->id();
+            $table->string("profession");
+            $table->string("qualification");
+            $table->string("profession_code");
+            $table->string("qualification_code");
+            $table->string("term");
+            $table->foreignId("name_college_id")->constrained();
+            $table->foreignId("category_id")->constrained();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('professions');
+    }
+};
