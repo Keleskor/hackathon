@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulytau education</title>
-    <link rel="stylesheet" href={{asset("assets/styles/main.css")}}>
-    <link rel="stylesheet" href={{asset("assets/styles/animations.css")}}>
+    <link rel="stylesheet" href={{ asset('assets/styles/main.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/styles/animations.css') }}>
     <link rel="icon" href="/assets/icons/8e98f0dd5a3a1bcda97f2d0088d72c7560f60010.png" type="image/x-icon">
     <script async src="./assets/scripts/animations.js"></script>
+    <style>
+        .none {
+            background-color: #00000000;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <img src={{asset("assets/icons/8e98f0dd5a3a1bcda97f2d0088d72c7560f60010.png")}} alt="" class="icon-ulytau">
+            <img src={{ asset('assets/icons/8e98f0dd5a3a1bcda97f2d0088d72c7560f60010.png') }} alt=""
+                class="icon-ulytau">
             <ul class="header-list">
                 <li class="header-list__element">
                     <a href="/index.php" class="header-list__link">
@@ -22,24 +29,23 @@
                     </a>
                 </li>
                 <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Список <span class="colleges"> колледжей</span>
-                    </a>
+                    <button class="none" class="header-list__link" onclick="alert('Нужно пройти авторизацию')">Список
+                        <span class="colleges">
+                            колледжей</span></button>
+                </li>
+                <button class="none" class="header-list__link" onclick="alert('Нужно пройти авторизацию')">С
+                    Опрос
+                </button>
                 </li>
                 <li class="header-list__element">
-                    <a href="" class="header-list__link">
-                        Опрос
-                    </a>
-                </li>
-                <li class="header-list__element">
-                    <a href="" class="header-list__link">
+                    <button class="none" class="header-list__link" onclick="alert('Нужно пройти авторизацию')">С
                         Контакты
-                    </a>
+                    </button>
                 </li>
                 <li class="header-list__element">
-                    <a href="" class="header-list__link">
+                    <button class="none" class="header-list__link" onclick="alert('Нужно пройти авторизацию')">С
                         Интересы студентов
-                    </a>
+                    </button>
                 </li>
             </ul>
             <div class="authorization">
@@ -52,7 +58,7 @@
             </div>
         </div>
     </header>
-   <section class="initial-section anim-down-top">
+    <section class="initial-section anim-down-top">
         <div class="initial-section__content">
             <div class="initial-section__information">
                 <h1 class="initial-section__title">
@@ -61,16 +67,14 @@
                 <h4 class="initial-section__subtiltle">
                     Найдём профессию по твоим интересам и навыкам!
                 </h4>
-                <a href="" class="button-test__link">
-                    <button class="button-test">
+                    <button class="button-test"  onclick="alert('Нужно пройти авторизацию')" class="button-test__link">
                         Пройти тест
                     </button>
-                </a>
             </div>
             <div class="main-video__wrapper">
-                <video src="assets/video/жумысшы шапка рус.mp4"  class="main-video" autoplay loop muted></video>
+                <video src="assets/video/жумысшы шапка рус.mp4" class="main-video" autoplay loop muted></video>
             </div>
-        </div>  
+        </div>
     </section>
     <section class="survey-help">
         <div class="survey-help__content">
@@ -98,8 +102,8 @@
                         <img src="assets/icons/2.png" alt="" class="survey-help-image">
                     </div>
                     <p class="survevy-help__description">
-                        Укажите  <br>
-                        что нравится 
+                        Укажите <br>
+                        что нравится
                     </p>
                 </div>
                 <div class="survey-help__block">
@@ -124,7 +128,8 @@
             </h2>
             <div class="examples-professions__blocks">
                 <div class="examples-professions__block">
-                    <img src="assets/icons/69f2a12ec46f4c9e4141545758d01e3fd79811b3.png" alt="" class="examples-professions__image">
+                    <img src="assets/icons/69f2a12ec46f4c9e4141545758d01e3fd79811b3.png" alt=""
+                        class="examples-professions__image">
                     <h4 class="examples-professions__heading">
                         Программист
                     </h4>
@@ -140,7 +145,8 @@
                     </h5>
                 </div>
                 <div class="examples-professions__block">
-                    <img src="assets/icons/61f2f2a217075c8ee2d1f7b929842775ae8c22b4.png" alt="" class="examples-professions__image">
+                    <img src="assets/icons/61f2f2a217075c8ee2d1f7b929842775ae8c22b4.png" alt=""
+                        class="examples-professions__image">
                     <h4 class="examples-professions__heading">
                         Графический <br> дизайнер
                     </h4>
@@ -158,7 +164,8 @@
                     </h5>
                 </div>
                 <div class="examples-professions__block">
-                    <img src={{asset("assets/icons/7c6e3332f7d4f277edbc393436c49eb41579f430.png")}} alt="" class="examples-professions__image">
+                    <img src={{ asset('assets/icons/7c6e3332f7d4f277edbc393436c49eb41579f430.png') }} alt=""
+                        class="examples-professions__image">
                     <h4 class="examples-professions__heading">
                         Педагог
                     </h4>
@@ -174,7 +181,8 @@
                     </h5>
                 </div>
                 <div class="examples-professions__block">
-                    <img src="assets/icons/cee9ddd83faf0e2025ea61df445289212400a468.png" alt="" class="examples-professions__image">
+                    <img src="assets/icons/cee9ddd83faf0e2025ea61df445289212400a468.png" alt=""
+                        class="examples-professions__image">
                     <h4 class="examples-professions__heading">
                         Медицина
                     </h4>
@@ -282,7 +290,7 @@
             <h4 class="modal-reg__close">
                 🗙
             </h4>
-            <form action={{route("register")}} class="modal-reg__form" method="post">
+            <form action={{ route('register') }} class="modal-reg__form" method="post">
                 @csrf
                 <div class="form-row">
                     <label for="input__name-reg" class="name-reg">
@@ -294,8 +302,7 @@
                     <label for="input__surname-reg" class="surname-reg">
                         Фамилия:
                     </label>
-                    <input type="text" class="input__surname-reg" name="surname"
-                        id="input__surname-reg">
+                    <input type="text" class="input__surname-reg" name="surname" id="input__surname-reg">
                 </div>
                 <div class="form-row">
                     <label for="input__email-reg" class="email-reg">
@@ -307,8 +314,7 @@
                     <label for="input__password-reg" class="password-reg">
                         Пароль
                     </label>
-                    <input type="text" name="password" id="input__password-reg"
-                        class="input__password-reg">
+                    <input type="text" name="password" id="input__password-reg" class="input__password-reg">
                 </div>
                 <input type="submit" class="submit-reg" value="Отправить">
             </form>
@@ -322,7 +328,7 @@
             <h4 class="modal-auth__close">
                 🗙
             </h4>
-            <form action={{route("auth")}} class="modal-reg__form" method="post">
+            <form action={{ route('auth') }} class="modal-reg__form" method="post">
                 @csrf
                 <div class="form-row">
                     <label for="input__email-reg" class="email-reg">
@@ -334,8 +340,7 @@
                     <label for="input__password-reg" class="password-reg">
                         Пароль
                     </label>
-                    <input type="text" name="password" id="password"
-                        class="input__password-reg">
+                    <input type="text" name="password" id="password" class="input__password-reg">
                 </div>
                 <input type="submit" class="submit-reg" value="Отправить">
             </form>
@@ -345,4 +350,3 @@
 </body>
 
 </html>
- 

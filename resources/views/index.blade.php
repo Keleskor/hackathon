@@ -10,7 +10,7 @@
                 <h4 class="initial-section__subtiltle">
                     Найдём профессию по твоим интересам и навыкам!
                 </h4>
-                <a href="" class="button-test__link">
+                <a href={{route("survey")}} class="button-test__link">
                     <button class="button-test">
                         Пройти тест
                     </button>
